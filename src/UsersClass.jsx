@@ -21,7 +21,7 @@ class UsersClass extends Component {
     render() {
         return (
             <div>
-                <h1>users</h1>
+                <h1>users Class Component</h1>
                 <hr />
                 <div>
                    {this.state.users.map(user =>
