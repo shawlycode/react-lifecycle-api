@@ -10,14 +10,27 @@ const UsersFunction = () => {
             .get('https://jsonplaceholder.typicode.com/users')
             .then((res) => {
                 console.log(res);
+                setUsers(res.data)
             })
-            .catch((err) => {
-                console.log(err));
-    });
+            .catch((err)=>console.log(err));
+            
+    },[]);
     return (
-        <div>
-            <h1>Users</h1>
-        </div>
+        <>
+            <h1>Users Functional Component</h1>
+            <hr />
+            <div > 
+            {users.map((users)=>
+            <div> 
+                <p>{users.name}</p>
+                <p>{users.username}</p>
+                <p>{users.email}</p>
+                <hr />
+            </div>
+            )}
+            </div>
+            
+        </>
     );
 };
 
