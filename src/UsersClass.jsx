@@ -26,9 +26,9 @@ class UsersClass extends Component {
                 <div>
                    {this.state.users.map(user =>
                    <div>
-                    <p>{user.name}</p>
-                    <p>{user.username}</p>
-                    <p>{user.email}</p>
+                    <p>Name: {user.name}</p>
+                    <p>Username: {user.username}</p>
+                    <p>Email: {user.email}</p>
                     <hr />
                     </div>)}
                 </div>
