@@ -1,11 +1,11 @@
 
 import './App.css';
-import UsersClass from './UsersClass';
+// import UsersClass from './UsersClass';
 
 function App() {
   return (
     <div className="App">
-   <UsersClass />
+   {/* <UsersClass /> */}
     </div>
   );
 }
