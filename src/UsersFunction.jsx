@@ -22,9 +22,9 @@ const UsersFunction = () => {
             <div > 
             {users.map((users)=>
             <div> 
-                <p>{users.name}</p>
-                <p>{users.username}</p>
-                <p>{users.email}</p>
+                <p>Name: {users.name}</p>
+                <p>Username: {users.username}</p>
+                <p> Email: {users.email}</p>
                 <hr />
             </div>
             )}
